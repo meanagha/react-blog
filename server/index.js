@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json()) // parse application/json
 
 app.get('/', (req, res) => {
-    res.send('Hello world1')
+    res.json({ "message": "Hello world1" })
 })
 app.post('/register', (req, res) => {//You have to give / before route name otherwise it gives 404 not found error
     const user = new User(req.body)
