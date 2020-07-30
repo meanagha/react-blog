@@ -89,7 +89,7 @@ app.get("/logout", auth, (req, res) => {
 });
 //req.user._id this is coming from auth middleware bcz I have used auth in route
 
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 5000//for heroku
 
 app.listen(port, () => {
     console.log(`Server Listening on ${port}`)
